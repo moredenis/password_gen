@@ -35,8 +35,13 @@ if user == "y":
         strong_password += random.choice(symbols)
 
     random.shuffle(strong_password)
-    strong_password =''.join(strong_password)
-    print(f"Strong password: {strong_password}")
+    for x in strong_password:
+        password += x
+    print(f"Strong password: {password}")
+
+# simple wat list -> str
+    # strong_password =''.join(strong_password)
+    # print(f"Strong password: {strong_password}")
 else:
     print("GoodBuy!")
 # user = input("Generate new password? (Y/N):").lower()
