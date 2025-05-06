@@ -6,7 +6,6 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Generator!")
 while True:
-    user = "y":
     while True:
         nr_letters = int(input("How many letters would you like in your password?\n"))
         nr_numbers = int(input(f"How many numbers would you like?\n"))
