@@ -6,40 +6,37 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Generator!")
 while True:
-    while True:
-        nr_letters = int(input("How many letters would you like in your password?\n"))
-        nr_numbers = int(input(f"How many numbers would you like?\n"))
-        nr_symbols = int(input(f"How many symbols would you like?\n"))
+    nr_letters = int(input("How many letters would you like in your password?\n"))
+    nr_numbers = int(input(f"How many numbers would you like?\n"))
+    nr_symbols = int(input(f"How many symbols would you like?\n"))
 
-        password = ""
-        for i in range(nr_letters):
-            password += random.choice(letters)
-        for i in range(nr_numbers):
-            password += random.choice(numbers)
-        for i in range(nr_symbols):
-            password += random.choice(symbols)
-        print(f"Simple password: {password}")
-        break
+    password = ""
+    for i in range(0, nr_letters):
+        password += random.choice(letters)
+    for i in range(0, nr_numbers):
+        password += random.choice(numbers)
+    for i in range(0, nr_symbols):
+        password += random.choice(symbols)
+    print(f"Simple password: {password}")
+    break
 
-    # generating strong password
+# generating strong password
+user = input("\nDo you want to generate a strong password? (Y/N): ").lower()
+if user == "y":
+    nr_letters = int(input("How many letters would you like in your password?\n"))
+    nr_numbers = int(input(f"How many numbers would you like?\n"))
+    nr_symbols = int(input(f"How many symbols would you like?\n"))
+    strong_password = []
+    for x in range(nr_letters):
+        strong_password += random.choice(letters)
+    for x in range(nr_numbers):
+        strong_password += random.choice(numbers)
+    for x in range(nr_symbols):
+        strong_password += random.choice(symbols)
 
-    user = input("\nDo you want to generate a strong password? (Y/N): ").lower()
-    if user == "y":
-        nr_letters = int(input("How many letters would you like in your password?\n"))
-        nr_numbers = int(input(f"How many numbers would you like?\n"))
-        nr_symbols = int(input(f"How many symbols would you like?\n"))
-        strong_password = ""
-        for x in range(nr_letters):
-            strong_password += random.choice(letters)
-        for x in range(nr_numbers):
-            strong_password += random.choice(numbers)
-        for x in range(nr_symbols):
-            strong_password += random.choice(symbols)
-
-        strong_password = list(strong_password)
-        random.shuffle(strong_password)
-        strong_password =''.join(strong_password)
-        print(f"Strong password: {strong_password}")
-    else:
-        print("GoodBuy!")
-
+    random.shuffle(strong_password)
+    strong_password =''.join(strong_password)
+    print(f"Strong password: {strong_password}")
+else:
+    print("GoodBuy!")
+# user = input("Generate new password? (Y/N):").lower()
