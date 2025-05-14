@@ -82,7 +82,6 @@ For real security needs, use password managers.
 ---
 
 
-```
+## NOTE:
 📌 All code in this project was written by hand; no code was generated using AI.
-
-📘 This README file was prepared with AI (ChatGPT).
+📘 Except for the README file was prepared with AI (ChatGPT).
