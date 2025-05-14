@@ -62,7 +62,7 @@ Strong password: G6#7a$2sD
 
 ```
 password_generator/
-├── password_generator.py   # Main script
+├── random_password_gen_full.py   # Main script
 └── README.md               # This file
 ```
 
