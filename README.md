@@ -78,5 +78,5 @@ password_generator/
 ## 🔒 Note
 
 This script is for **educational/demo purposes** only.  
-For real security needs, use password managers or libraries like `secrets`.
+For real security needs, use password managers.
 
