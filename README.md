@@ -79,4 +79,8 @@ password_generator/
 
 This script is for **educational/demo purposes** only.  
 For real security needs, use password managers.
+---
 
+📌 *All code in this project was written by hand; no code was generated using AI.*
+```
+📘 *This README file was prepared with AI (ChatGPT).*
