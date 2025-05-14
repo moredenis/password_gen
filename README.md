@@ -83,6 +83,6 @@ For real security needs, use password managers.
 
 
 ```
-📌 *All code in this project was written by hand; no code was generated using AI.*
+📌 All code in this project was written by hand; no code was generated using AI.
 
-📘 *This README file was prepared with AI (ChatGPT).*
+📘 This README file was prepared with AI (ChatGPT).
